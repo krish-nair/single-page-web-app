@@ -49,6 +49,11 @@ nav {
   cursor: pointer;
 }
 
+.nav-menu__link.active {
+  background-color: navy;
+  color: #fff;
+}
+
 .logo a {
   color: #fff;
   text-decoration: none;

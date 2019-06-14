@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Navbar = (props) => {
+const Navbar = props => {
   return (
     <nav>
       <h2 className="logo">
@@ -8,24 +9,24 @@ const Navbar = (props) => {
       </h2>
       <ul className="nav-menu">
         <li>
-          <a className="nav-menu__link" href="#">
+          <NavLink className="nav-menu__link" exact to="/">
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="nav-menu__link" href="#">
+          <NavLink className="nav-menu__link" to="/actors">
             Best Actor
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="nav-menu__link" href="#">
+          <NavLink className="nav-menu__link" to="/actress">
             Best Actress
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="nav-menu__link" href="#">
+          <NavLink className="nav-menu__link" to="/films">
             Best Films
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

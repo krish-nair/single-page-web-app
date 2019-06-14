@@ -3,6 +3,9 @@ import "./css/style.css";
 import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
+import Actors from "./components/actors";
+import Actress from "./components/actress";
+import Films from "./components/films";
 
 class App extends Component {
   state = {};
@@ -11,7 +14,10 @@ class App extends Component {
       <BrowserRouter>
         <div className="app">
           <Navbar title="Oscars 2019" />
-          <Route to="/" render={() => <Home title="Oscar Winners" />} />
+          <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
+          <Route path="/actors" component={Actors} />
+          <Route path="/actress" component={Actress} />
+          <Route path="/films" render={() => <Films />} />
         </div>
       </BrowserRouter>
     );
