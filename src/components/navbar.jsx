@@ -1,10 +1,10 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav>
       <h2 className="logo">
-        <a href="#">Oscars 2019</a>
+        <a href="#">{props.title}</a>
       </h2>
       <ul className="nav-menu">
         <li>
