@@ -15,8 +15,11 @@ class App extends Component {
         <div className="app">
           <Navbar title="Oscars 2019" />
           <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
-          <Route path="/actors" component={Actors} />
-          <Route path="/actress" component={Actress} />
+          <Route path="/actors" render={() => <Actors title="Best Actors" />} />
+          <Route
+            path="/actress"
+            render={() => <Actress title="Best Actress" />}
+          />
           <Route path="/films" render={() => <Films />} />
         </div>
       </BrowserRouter>

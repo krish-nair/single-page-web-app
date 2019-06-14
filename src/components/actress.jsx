@@ -1,11 +1,30 @@
 import React from "react";
+import { ActressList } from "../data/bestActresses";
+import { Link } from "react-router-dom";
 
-const Actress = () => {
+const Actress = props => {
+  let actress = ActressList.map(person => {
+    return (
+      <div className="actress-container">
+        <a>
+          <div
+            className="actress-image"
+            style={{ backgroundImage: "url(" + person.img_src + ")" }}
+          />
+        </a>
+        <h3>{person.name}</h3>
+      </div>
+    );
+  });
   return (
     <div className="main-content">
-      <div className="container">
-        <h2>Best Actress</h2>
+      <div>
+        <Link className="back-btn" to="/">
+          Back
+        </Link>
       </div>
+      <h2>{props.title}</h2>
+      <div className="container">{actress}</div>
     </div>
   );
 };

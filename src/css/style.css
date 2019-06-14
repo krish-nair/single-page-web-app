@@ -122,3 +122,49 @@ nav {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.back-btn {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background-color: rgb(149, 216, 238);
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  border: 1px solid black;
+  background-color: rgb(#228, #228, #228);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.actor-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.actor-image {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.actress-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.actress-image {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
