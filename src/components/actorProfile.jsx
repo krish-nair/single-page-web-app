@@ -5,7 +5,7 @@ const ActorProfile = props => {
   return (
     <div className="main-content">
       <div>
-        <Link className="back-btn" to="/">
+        <Link className="back-btn" to="/actors">
           Back
         </Link>
       </div>

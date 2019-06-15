@@ -156,6 +156,12 @@ nav {
   width: 250px;
   height: 250px;
   background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.actor-image:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 .actress-container {
