@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Actors from "./components/actors";
 import Actress from "./components/actress";
+import ActorsContainer from "./components/actorsContainer";
 import Films from "./components/films";
 
 class App extends Component {
@@ -15,7 +16,10 @@ class App extends Component {
         <div className="app">
           <Navbar title="Oscars 2019" />
           <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
-          <Route path="/actors" render={() => <Actors title="Best Actors" />} />
+          <Route
+            path="/actors"
+            render={() => <ActorsContainer title="Best Actors" />}
+          />
           <Route
             path="/actress"
             render={() => <Actress title="Best Actress" />}
