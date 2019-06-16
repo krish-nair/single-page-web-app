@@ -6,7 +6,8 @@ import Home from "./components/home";
 import Actors from "./components/actors";
 import Actress from "./components/actress";
 import ActorsContainer from "./components/actorsContainer";
-import Films from "./components/films";
+import ActressContainer from "./components/actressContainer";
+import MoviesContainer from "./components/moviesContainer";
 
 class App extends Component {
   state = {};
@@ -22,9 +23,12 @@ class App extends Component {
           />
           <Route
             path="/actress"
-            render={() => <Actress title="Best Actress" />}
+            render={() => <ActressContainer title="Best Actress" />}
           />
-          <Route path="/films" render={() => <Films />} />
+          <Route
+            path="/movies"
+            render={() => <MoviesContainer title="Best Movies" />}
+          />
         </div>
       </BrowserRouter>
     );

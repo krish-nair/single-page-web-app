@@ -24,8 +24,8 @@ const Navbar = props => {
           </NavLink>
         </li>
         <li>
-          <NavLink className="nav-menu__link" to="/films">
-            Best Films
+          <NavLink className="nav-menu__link" to="/movies">
+            Best Movies
           </NavLink>
         </li>
       </ul>

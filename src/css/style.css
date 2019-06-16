@@ -14,7 +14,7 @@ code {
 
 .app {
   background: #fff;
-  width: 992px;
+  width: 1100px;
   margin: auto;
 }
 
@@ -173,6 +173,29 @@ nav {
   width: 250px;
   height: 250px;
   background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.actress-image:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.movie-image {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-image:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 .image-profile {

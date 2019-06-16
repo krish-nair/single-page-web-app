@@ -6,12 +6,12 @@ const Actress = props => {
   let actress = ActressList.map(person => {
     return (
       <div className="actress-container">
-        <a>
+        <Link to={`/actress/${person.url}`}>
           <div
             className="actress-image"
             style={{ backgroundImage: "url(" + person.img_src + ")" }}
           />
-        </a>
+        </Link>
         <h3>{person.name}</h3>
       </div>
     );
